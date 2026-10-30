@@ -1,0 +1,37 @@
+{
+  "config": {
+    "material": "六氟磷酸锂",
+    "news_input": "F:\\暑期项目\\文本收集\\重大事件采集\\结果\\六氟磷酸锂_2021-01-01_2025-12-31_smm\\因子输入\\20261023_201150_802208\\factor_inputs.jsonl",
+    "factor_results": "F:\\暑期项目\\因子收集\\六氟磷酸锂_LLMFactor文本因子\\results.json",
+    "price": "F:\\暑期项目\\课题组数据\\第四组\\六氟磷酸锂（国产）更新.xlsx",
+    "price_column": "六氟磷酸锂（国产）",
+    "output": "F:\\暑期项目\\预测结果\\五框架实验_多物料\\六氟磷酸锂_20261026_190645",
+    "epochs": 40,
+    "patience": 8,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "window": 20,
+    "hidden": 32,
+    "lr": 0.001,
+    "smoke": false,
+    "prepare_only": false
+  },
+  "hashes": {
+    "F:\\暑期项目\\课题组数据\\第四组\\六氟磷酸锂（国产）更新.xlsx": "20f1df995e3b4a5c1542ee6878ace2fc73becd841f8788a41a121567ef04dded",
+    "F:\\暑期项目\\文本收集\\重大事件采集\\结果\\六氟磷酸锂_2021-01-01_2025-12-31_smm\\因子输入\\20261023_201150_802208\\factor_inputs.jsonl": "a4a192fd67937989d021921ba3f72cdbc172335b23413bc276de05aff714aa2c",
+    "F:\\暑期项目\\因子收集\\六氟磷酸锂_LLMFactor文本因子\\results.json": "dcf71c029a7debc1a459f2ec779884c2f28f755728b5754f47070307a03e4bd0",
+    "F:\\暑期项目\\预测项目代码\\五框架实验_多物料\\data.py": "b1911bdc520a781cd58691514252774f9b71cc732864025e8f294e437f8be9c9",
+    "F:\\暑期项目\\预测项目代码\\五框架实验_多物料\\extract_factors.py": "4c24297ab1e2cf44752e5c9a5d716f1f9b2ee6e549edd826e8af6850eec13047",
+    "F:\\暑期项目\\预测项目代码\\五框架实验_多物料\\models.py": "2d190cddc1f526591f4418fda72be9f74a17593bae7c1308ca68c6fa2b9bb151",
+    "F:\\暑期项目\\预测项目代码\\五框架实验_多物料\\run.py": "578f47b22ef03d765d17abdf66a154d779ade7b76d4c0b419d7a90a7fac90e66"
+  },
+  "environment": {
+    "torch": "2.13.0+cpu",
+    "device": "cpu",
+    "threads": 2
+  },
+  "method": "five user diagrams; fixed lightweight encoders; no API"
+}

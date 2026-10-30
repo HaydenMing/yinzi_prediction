@@ -1,0 +1,48 @@
+{
+  "material": "六氟磷酸锂",
+  "price_column": "六氟磷酸锂（国产）",
+  "total_samples": 509,
+  "window": 20,
+  "dimension": 32,
+  "price_difference_scale": 383.3469295102755,
+  "factor_decisions": {
+    "keep": 230
+  },
+  "extraction_status": {
+    "extracted": 119
+  },
+  "retained_factor_records": 230,
+  "fit_snapshot_start": "2023-09-22",
+  "fit_snapshot_end": "2025-04-16",
+  "fit_news_before": "2025-04-17T00:00:00+08:00",
+  "splits": {
+    "train": {
+      "start": 0,
+      "end": 356,
+      "count": 356,
+      "first": "2023-10-30",
+      "last": "2025-04-17",
+      "flat": 183,
+      "latest_news_days": 42
+    },
+    "validation": {
+      "start": 356,
+      "end": 432,
+      "count": 76,
+      "first": "2025-04-18",
+      "last": "2025-08-07",
+      "flat": 35,
+      "latest_news_days": 10
+    },
+    "test": {
+      "start": 432,
+      "end": 509,
+      "count": 77,
+      "first": "2025-08-08",
+      "last": "2025-12-31",
+      "flat": 30,
+      "latest_news_days": 31
+    }
+  },
+  "note": "缺新闻不是无事件；latest_news指最新快照，窗口内可能仍有更早新闻。规则清理非全量人工语义审核。"
+}

@@ -1,0 +1,50 @@
+{
+  "total_samples": 545,
+  "window": 20,
+  "dimension": 32,
+  "price_difference_scale": 25.64612696975884,
+  "factor_decisions": {
+    "keep": 3778,
+    "review": 11,
+    "reject": 4
+  },
+  "extraction_status": {
+    "extracted": 1773,
+    "validation_failed": 126,
+    "call_failed": 5
+  },
+  "retained_factor_records": 3789,
+  "fit_snapshot_start": "2023-09-01",
+  "fit_snapshot_end": "2025-04-30",
+  "fit_news_before": "2025-05-06T00:00:00+08:00",
+  "splits": {
+    "train": {
+      "start": 0,
+      "end": 381,
+      "count": 381,
+      "first": "2023-10-09",
+      "last": "2025-05-06",
+      "flat": 198,
+      "latest_news_days": 188
+    },
+    "validation": {
+      "start": 381,
+      "end": 462,
+      "count": 81,
+      "first": "2025-05-07",
+      "last": "2025-08-28",
+      "flat": 63,
+      "latest_news_days": 80
+    },
+    "test": {
+      "start": 462,
+      "end": 545,
+      "count": 83,
+      "first": "2025-08-29",
+      "last": "2025-12-31",
+      "flat": 61,
+      "latest_news_days": 83
+    }
+  },
+  "note": "缺新闻不是无事件；latest_news指最新快照，窗口内可能仍有更早新闻。规则清理非全量人工语义审核。"
+}

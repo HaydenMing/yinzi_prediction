@@ -1,0 +1,32 @@
+{
+  "config": {
+    "output": "F:\\暑期项目\\预测结果\\五框架实验\\formal_20261004",
+    "epochs": 40,
+    "patience": 8,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "window": 20,
+    "hidden": 32,
+    "lr": 0.001,
+    "smoke": false,
+    "prepare_only": false
+  },
+  "hashes": {
+    "F:\\暑期项目\\课题组数据\\第二组数据\\磷酸铁（主要）.xlsx": "cd0b7b0322ed43353686d0d67b0aa78e9792dfd2c6c11a68bf8113dc33dc0616",
+    "F:\\暑期项目\\文本收集\\重大事件采集\\结果\\磷酸铁_2021-01-01_2025-12-31_smm\\因子输入\\20261001_100634_265970\\factor_inputs.jsonl": "7b89ae13fbb0a3afb2ddb20be1c9fb5fdf4bb01ea25fdbe14f8cd7702b1ec8b6",
+    "F:\\暑期项目\\因子收集\\磷酸铁_LLMFactor文本因子\\results.json": "a1be50f6940dc0d9afffd30aff1669006ba5941c1d60bbdabe4396814fe8293d",
+    "F:\\暑期项目\\预测项目代码\\五框架实验\\data.py": "7c96b8c4a3ceffbeb0d9d4ff521d026a2252ea4025a95f4abde50022c5a01ca6",
+    "F:\\暑期项目\\预测项目代码\\五框架实验\\models.py": "2d190cddc1f526591f4418fda72be9f74a17593bae7c1308ca68c6fa2b9bb151",
+    "F:\\暑期项目\\预测项目代码\\五框架实验\\run.py": "e5c7abeafbc62cc77fa7a51181070a0719ac77d8c440665f3533fd39c1fd47d0",
+    "F:\\暑期项目\\预测项目代码\\五框架实验\\test_suite.py": "b3322838d147e33c4ad2215d5a4cecb547bd1744f2850ec4ccfd4d92f9b6910b"
+  },
+  "environment": {
+    "torch": "2.0.1+cpu",
+    "device": "cpu",
+    "threads": 2
+  },
+  "method": "five user diagrams; fixed lightweight encoders; no API"
+}

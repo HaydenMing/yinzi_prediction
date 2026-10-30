@@ -1,0 +1,35 @@
+{
+  "protocol": "portable_inputs_v1",
+  "materials": {
+    "磷酸铁": {
+      "reference": "data/reference/磷酸铁",
+      "news": "data/raw/磷酸铁/news.jsonl",
+      "factor_results": "data/raw/磷酸铁/factors.json",
+      "files": {
+        "data/reference/磷酸铁/data/dataset.npz": "640f8af335ac01466cd417a2dc495564227d06c369e53c998f2315507a7baf7a",
+        "data/reference/磷酸铁/data/data_report.json": "32fb7a2855df87f086adfc72a1909bf0b29aeab6c2e9dfc71679f2ce1626b75a",
+        "data/reference/磷酸铁/data/sample_index.json": "7ae83d7f13e6b24c7acf3edd33b61453bd561762b26a2ce4b2d3f79cb236dcdf",
+        "data/reference/磷酸铁/data/cleaned_factors.json": "68dba551a0f02de2552cba7f90fdea5b198bb573f74b1fd23b89b42942a7784b",
+        "data/raw/磷酸铁/磷酸铁（主要）.xlsx": "cd0b7b0322ed43353686d0d67b0aa78e9792dfd2c6c11a68bf8113dc33dc0616",
+        "data/raw/磷酸铁/news.jsonl": "7b89ae13fbb0a3afb2ddb20be1c9fb5fdf4bb01ea25fdbe14f8cd7702b1ec8b6",
+        "data/raw/磷酸铁/factors.json": "a1be50f6940dc0d9afffd30aff1669006ba5941c1d60bbdabe4396814fe8293d",
+        "data/reference/磷酸铁/original_manifest.json": "3ca70d1337a78000fd014d8132a6e82402e1c7cce532444cdd7cfc0bfad82399"
+      }
+    },
+    "六氟磷酸锂": {
+      "reference": "data/reference/六氟磷酸锂",
+      "news": "data/raw/六氟磷酸锂/news.jsonl",
+      "factor_results": "data/raw/六氟磷酸锂/factors.json",
+      "files": {
+        "data/reference/六氟磷酸锂/data/dataset.npz": "d56a300e44ec1b929e9cda2f35f73d895e93d1acfbdd1675de3e4e5b02d2845e",
+        "data/reference/六氟磷酸锂/data/data_report.json": "3377445f4514a849dc10fe2c2e7afb7d08947fb41ee84927b2dd8755d3e11f18",
+        "data/reference/六氟磷酸锂/data/sample_index.json": "d61d81a69ad7ea358303cc680697520c4b2e1d103b9200ef18da1be553557c91",
+        "data/reference/六氟磷酸锂/data/cleaned_factors.json": "29a06934639c0426d2d6e3ae7e8dcafe348b6bbb4226e8ed90dc387e211cd1fc",
+        "data/raw/六氟磷酸锂/六氟磷酸锂（国产）更新.xlsx": "20f1df995e3b4a5c1542ee6878ace2fc73becd841f8788a41a121567ef04dded",
+        "data/raw/六氟磷酸锂/news.jsonl": "a4a192fd67937989d021921ba3f72cdbc172335b23413bc276de05aff714aa2c",
+        "data/raw/六氟磷酸锂/factors.json": "dcf71c029a7debc1a459f2ec779884c2f28f755728b5754f47070307a03e4bd0",
+        "data/reference/六氟磷酸锂/original_manifest.json": "32158382a633342bb8c0b9aa47f941a77a15079fa0ffa9bf9463e75d3c6ea9ff"
+      }
+    }
+  }
+}
