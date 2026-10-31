@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "ucmib_pns",
+  "recipe_id": "late_news_bigru",
+  "seed": 11,
+  "recipe": {
+    "id": "late_news_bigru",
+    "order": "late",
+    "paired": false,
+    "pair_id": null,
+    "price": "gru",
+    "news": "bigru",
+    "factor": "mean",
+    "joint": null
+  },
+  "validation": {
+    "mae": 5.717038214274717,
+    "rmse": 12.470215023602263,
+    "mape_percent": 0.053983729307007226,
+    "wape_percent": 0.05393369461760894,
+    "direction_accuracy": 0.1111111111111111,
+    "flat_count": 63,
+    "flat_mae": 1.4635274561116516,
+    "change_count": 18,
+    "change_mae": 20.604325867845446,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 20.604325867845446
+  },
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "parameters": 213608,
+  "train_seconds": 212.21177880093455,
+  "checkpoint_sha256": "5d61774c905aa5ed19b566be8497bff6225ba4af0c00ffc694ac80bc8ac78c6f",
+  "test_used_for_training": false
+}

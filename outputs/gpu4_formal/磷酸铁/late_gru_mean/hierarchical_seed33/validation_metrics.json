@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "hierarchical",
+  "recipe_id": "late_gru_mean",
+  "seed": 33,
+  "recipe": {
+    "id": "late_gru_mean",
+    "order": "late",
+    "paired": true,
+    "pair_id": "gru_mean",
+    "price": "gru",
+    "news": "mean",
+    "factor": "mean",
+    "joint": null
+  },
+  "validation": {
+    "mae": 5.968343632936888,
+    "rmse": 12.06544528574527,
+    "mape_percent": 0.05634420985147977,
+    "wape_percent": 0.056304472841905866,
+    "direction_accuracy": 0.16049382716049382,
+    "flat_count": 63,
+    "flat_mae": 2.05736381465249,
+    "change_count": 18,
+    "change_mae": 19.65677299693228,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 19.65677299693228
+  },
+  "best_epoch": 7,
+  "epochs_run": 15,
+  "parameters": 189857,
+  "train_seconds": 182.49829237908125,
+  "checkpoint_sha256": "d06eec9f58c83fd8d34835004332ed58e18e5899a7569e4d60002d150cd48420",
+  "test_used_for_training": false
+}

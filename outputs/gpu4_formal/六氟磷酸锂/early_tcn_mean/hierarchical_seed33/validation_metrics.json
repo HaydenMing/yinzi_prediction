@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "hierarchical",
+  "recipe_id": "early_tcn_mean",
+  "seed": 33,
+  "recipe": {
+    "id": "early_tcn_mean",
+    "order": "early",
+    "paired": true,
+    "pair_id": "tcn_mean",
+    "price": "tcn",
+    "news": null,
+    "factor": null,
+    "joint": "mean"
+  },
+  "validation": {
+    "mae": 171.9483532541007,
+    "rmse": 284.47432992147634,
+    "mape_percent": 0.32561104595782586,
+    "wape_percent": 0.32415723687333564,
+    "direction_accuracy": 0.5,
+    "flat_count": 35,
+    "flat_mae": 51.05546726644908,
+    "change_count": 41,
+    "change_mae": 275.1495973899009,
+    "up_count": 7,
+    "up_mae": 508.94048823738143,
+    "down_count": 34,
+    "down_mae": 227.01617868600783
+  },
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "parameters": 66753,
+  "train_seconds": 43.70406574755907,
+  "checkpoint_sha256": "2b6dce3c4f4f193f366ca5fcd02cd1ececd5c211dfc38f779b822a9438f4244d",
+  "test_used_for_training": false
+}

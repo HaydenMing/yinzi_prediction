@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "lcmf",
+  "recipe_id": "early_gru_textcnn",
+  "seed": 33,
+  "parameters": 134337,
+  "test": {
+    "mae": 8.96604483148729,
+    "rmse": 22.029883924883283,
+    "mape_percent": 0.08308500287935354,
+    "wape_percent": 0.0843351413757148,
+    "direction_accuracy": 0.0,
+    "flat_count": 61,
+    "flat_mae": 0.6583014134592632,
+    "change_count": 22,
+    "change_mae": 32.00115158147409,
+    "up_count": 22,
+    "up_mae": 32.00115158147409,
+    "down_count": 0,
+    "down_mae": null
+  },
+  "recipe": {
+    "id": "early_gru_textcnn",
+    "order": "early",
+    "paired": true,
+    "pair_id": "gru_textcnn",
+    "price": "gru",
+    "news": null,
+    "factor": null,
+    "joint": "textcnn"
+  },
+  "selection_scopes": [
+    "paired_early"
+  ],
+  "checkpoint_sha256": "0c9b0f7ab0126e3f5d0837f77510fe505080a3f372ebc35ea0972ab262bc4637",
+  "feature_sha256": "5c9bfc5bf274f6b12906b70ae9654229dc07080ca2979ddf6688ee0dd63c73c0"
+}

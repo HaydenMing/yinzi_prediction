@@ -1,0 +1,97 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 0.8713015553269846,
+    "validation_mae": 6.106802468359249
+  },
+  {
+    "epoch": 2,
+    "training_loss": 0.7936964728869498,
+    "validation_mae": 6.564641757019728
+  },
+  {
+    "epoch": 3,
+    "training_loss": 0.7697630932865044,
+    "validation_mae": 8.59041362521712
+  },
+  {
+    "epoch": 4,
+    "training_loss": 0.7505619278332839,
+    "validation_mae": 7.132161189536688
+  },
+  {
+    "epoch": 5,
+    "training_loss": 0.7248559636063874,
+    "validation_mae": 6.318224881301595
+  },
+  {
+    "epoch": 6,
+    "training_loss": 0.7101566617493518,
+    "validation_mae": 6.962215364035167
+  },
+  {
+    "epoch": 7,
+    "training_loss": 0.7135539602022618,
+    "validation_mae": 6.056697930140554
+  },
+  {
+    "epoch": 8,
+    "training_loss": 0.674143303418532,
+    "validation_mae": 8.119007811812525
+  },
+  {
+    "epoch": 9,
+    "training_loss": 0.6743603595532477,
+    "validation_mae": 6.396135111461352
+  },
+  {
+    "epoch": 10,
+    "training_loss": 0.6834378902373525,
+    "validation_mae": 6.089551605614956
+  },
+  {
+    "epoch": 11,
+    "training_loss": 0.6790830330379928,
+    "validation_mae": 5.752022635991451
+  },
+  {
+    "epoch": 12,
+    "training_loss": 0.6732439296320081,
+    "validation_mae": 6.772090606882288
+  },
+  {
+    "epoch": 13,
+    "training_loss": 0.6398525286155442,
+    "validation_mae": 7.470664725147777
+  },
+  {
+    "epoch": 14,
+    "training_loss": 0.5834949840403473,
+    "validation_mae": 6.826262577280746
+  },
+  {
+    "epoch": 15,
+    "training_loss": 0.6309779494768009,
+    "validation_mae": 6.173905379088315
+  },
+  {
+    "epoch": 16,
+    "training_loss": 0.6044170387710134,
+    "validation_mae": 6.231917218925086
+  },
+  {
+    "epoch": 17,
+    "training_loss": 0.5643127769387016,
+    "validation_mae": 6.00046299566175
+  },
+  {
+    "epoch": 18,
+    "training_loss": 0.5084002560470253,
+    "validation_mae": 6.340742722453528
+  },
+  {
+    "epoch": 19,
+    "training_loss": 0.5603937151803015,
+    "validation_mae": 7.110071790685528
+  }
+]

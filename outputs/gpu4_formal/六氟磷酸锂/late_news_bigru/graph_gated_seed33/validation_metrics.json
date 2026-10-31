@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "graph_gated",
+  "recipe_id": "late_news_bigru",
+  "seed": 33,
+  "recipe": {
+    "id": "late_news_bigru",
+    "order": "late",
+    "paired": false,
+    "pair_id": null,
+    "price": "gru",
+    "news": "bigru",
+    "factor": "mean",
+    "joint": null
+  },
+  "validation": {
+    "mae": 177.74581914150545,
+    "rmse": 280.77832327013084,
+    "mape_percent": 0.3369383517030445,
+    "wape_percent": 0.3350866263519972,
+    "direction_accuracy": 0.5,
+    "flat_count": 35,
+    "flat_mae": 84.0242117046863,
+    "change_count": 41,
+    "change_mae": 257.7520693924486,
+    "up_count": 7,
+    "up_mae": 489.1820712714024,
+    "down_count": 34,
+    "down_mae": 210.10471606442874
+  },
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "parameters": 149836,
+  "train_seconds": 29.149784564971924,
+  "checkpoint_sha256": "9ca7832e41458c9b5ed4938bb5832e8c7bf139a49642fe91f60a6e82430ba1da",
+  "test_used_for_training": false
+}

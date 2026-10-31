@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "hierarchical",
+  "recipe_id": "late_tcn_mean",
+  "seed": 11,
+  "recipe": {
+    "id": "late_tcn_mean",
+    "order": "late",
+    "paired": true,
+    "pair_id": "tcn_mean",
+    "price": "tcn",
+    "news": "mean",
+    "factor": "mean",
+    "joint": null
+  },
+  "validation": {
+    "mae": 5.809242384820197,
+    "rmse": 12.009987775530627,
+    "mape_percent": 0.05485093406360553,
+    "wape_percent": 0.05480353515221533,
+    "direction_accuracy": 0.12345679012345678,
+    "flat_count": 63,
+    "flat_mae": 2.059246391285313,
+    "change_count": 18,
+    "change_mae": 18.934228362192293,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 18.934228362192293
+  },
+  "best_epoch": 10,
+  "epochs_run": 18,
+  "parameters": 196001,
+  "train_seconds": 135.3554050475359,
+  "checkpoint_sha256": "6a6a461f6ce55b5e079353d57f1aeecffb0be7cde5c39b4c891c2155a7d32a2a",
+  "test_used_for_training": false
+}

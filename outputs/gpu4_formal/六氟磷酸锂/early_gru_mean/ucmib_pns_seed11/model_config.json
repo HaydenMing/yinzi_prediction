@@ -1,0 +1,28 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "ucmib_pns",
+  "recipe_id": "early_gru_mean",
+  "seed": 11,
+  "recipe": {
+    "id": "early_gru_mean",
+    "order": "early",
+    "paired": true,
+    "pair_id": "gru_mean",
+    "price": "gru",
+    "news": null,
+    "factor": null,
+    "joint": "mean"
+  },
+  "architecture": {
+    "hidden": 32,
+    "embedding": 32,
+    "chunk_size": 256,
+    "chunk_batch": 64,
+    "news_temporal": null,
+    "factor_temporal": null,
+    "price_encoder": "linear_to_embedding",
+    "shared_temporal": "gru"
+  },
+  "target": "下一报价日标准化价差；最终还原为价格",
+  "feature_meaning": "混合视图，不能解释为独立模态"
+}

@@ -1,0 +1,268 @@
+{
+  "protocol": "modality_specific_raw_text_v1",
+  "config": {
+    "root": "/media/data2/xiawk/work2",
+    "output": "/media/data2/xiawk/work2/outputs/gpu4_formal",
+    "config": "/media/data2/xiawk/work2/src/实验配置.json",
+    "materials": [
+      "磷酸铁",
+      "六氟磷酸锂"
+    ],
+    "models": [
+      "ucmib_pns",
+      "graph_gated",
+      "hierarchical",
+      "parallel",
+      "lcmf"
+    ],
+    "recipes": null,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "epochs": 40,
+    "patience": 8,
+    "batch_size": 8,
+    "hidden": 32,
+    "embedding": 32,
+    "max_vocab": 8000,
+    "chunk_size": 256,
+    "chunk_batch": 64,
+    "lr": 0.001,
+    "device": "cuda:0",
+    "deterministic": false,
+    "threads": 2
+  },
+  "recipes": [
+    {
+      "id": "late_gru_mean",
+      "order": "late",
+      "paired": true,
+      "pair_id": "gru_mean",
+      "price": "gru",
+      "news": "mean",
+      "factor": "mean",
+      "joint": null
+    },
+    {
+      "id": "early_gru_mean",
+      "order": "early",
+      "paired": true,
+      "pair_id": "gru_mean",
+      "price": "gru",
+      "news": null,
+      "factor": null,
+      "joint": "mean"
+    },
+    {
+      "id": "late_gru_textcnn",
+      "order": "late",
+      "paired": true,
+      "pair_id": "gru_textcnn",
+      "price": "gru",
+      "news": "textcnn",
+      "factor": "textcnn",
+      "joint": null
+    },
+    {
+      "id": "early_gru_textcnn",
+      "order": "early",
+      "paired": true,
+      "pair_id": "gru_textcnn",
+      "price": "gru",
+      "news": null,
+      "factor": null,
+      "joint": "textcnn"
+    },
+    {
+      "id": "late_gru_bigru",
+      "order": "late",
+      "paired": true,
+      "pair_id": "gru_bigru",
+      "price": "gru",
+      "news": "bigru",
+      "factor": "bigru",
+      "joint": null
+    },
+    {
+      "id": "early_gru_bigru",
+      "order": "early",
+      "paired": true,
+      "pair_id": "gru_bigru",
+      "price": "gru",
+      "news": null,
+      "factor": null,
+      "joint": "bigru"
+    },
+    {
+      "id": "late_tcn_mean",
+      "order": "late",
+      "paired": true,
+      "pair_id": "tcn_mean",
+      "price": "tcn",
+      "news": "mean",
+      "factor": "mean",
+      "joint": null
+    },
+    {
+      "id": "early_tcn_mean",
+      "order": "early",
+      "paired": true,
+      "pair_id": "tcn_mean",
+      "price": "tcn",
+      "news": null,
+      "factor": null,
+      "joint": "mean"
+    },
+    {
+      "id": "late_tcn_textcnn",
+      "order": "late",
+      "paired": true,
+      "pair_id": "tcn_textcnn",
+      "price": "tcn",
+      "news": "textcnn",
+      "factor": "textcnn",
+      "joint": null
+    },
+    {
+      "id": "early_tcn_textcnn",
+      "order": "early",
+      "paired": true,
+      "pair_id": "tcn_textcnn",
+      "price": "tcn",
+      "news": null,
+      "factor": null,
+      "joint": "textcnn"
+    },
+    {
+      "id": "late_tcn_bigru",
+      "order": "late",
+      "paired": true,
+      "pair_id": "tcn_bigru",
+      "price": "tcn",
+      "news": "bigru",
+      "factor": "bigru",
+      "joint": null
+    },
+    {
+      "id": "early_tcn_bigru",
+      "order": "early",
+      "paired": true,
+      "pair_id": "tcn_bigru",
+      "price": "tcn",
+      "news": null,
+      "factor": null,
+      "joint": "bigru"
+    },
+    {
+      "id": "late_news_textcnn",
+      "order": "late",
+      "paired": false,
+      "pair_id": null,
+      "price": "gru",
+      "news": "textcnn",
+      "factor": "mean",
+      "joint": null
+    },
+    {
+      "id": "late_factor_textcnn",
+      "order": "late",
+      "paired": false,
+      "pair_id": null,
+      "price": "gru",
+      "news": "mean",
+      "factor": "textcnn",
+      "joint": null
+    },
+    {
+      "id": "late_news_bigru",
+      "order": "late",
+      "paired": false,
+      "pair_id": null,
+      "price": "gru",
+      "news": "bigru",
+      "factor": "mean",
+      "joint": null
+    },
+    {
+      "id": "late_factor_bigru",
+      "order": "late",
+      "paired": false,
+      "pair_id": null,
+      "price": "gru",
+      "news": "mean",
+      "factor": "bigru",
+      "joint": null
+    }
+  ],
+  "source_hashes": {
+    "/media/data2/xiawk/work2/src/test_contracts.py": "0e8c8463f00e2b08d431674557d8103ca708fd26b1194f5f9de0ba45129e912b",
+    "/media/data2/xiawk/work2/src/data.py": "dc504bd2a829123adb5f10395e4bc333f25ca10b77cca41ba3d119408c4bf8d4",
+    "/media/data2/xiawk/work2/src/training.py": "fc8f8228620d345a1975334d7d0090d44a72c6be6d9c81d75cd1684efc14b45d",
+    "/media/data2/xiawk/work2/src/run.py": "b684706de48061a039adee7bf88ecb536ed42501fa949678065e93b786e5e065",
+    "/media/data2/xiawk/work2/src/model.py": "9c08e5c3ccd624e013db9134059b9a05d797c0229eefba642a620f6723bdeacd",
+    "/media/data2/xiawk/work2/src/encoders.py": "ebd072727677b553cf311364953a670a8d8006e499f468b8cfc9ab97bf212341",
+    "/media/data2/xiawk/work2/src/common.py": "238a46a8b37e07ad1256248530a296c7ae96f8c8c4401b5357c8cb0116faa54a",
+    "/media/data2/xiawk/work2/src/reports.py": "1915651a66f2411a08e2eb689712e2154600bb360bfdf28ad33137911058a8a4",
+    "/media/data2/xiawk/work2/src/experiments.py": "ab7073af468d5820098a8e8975e85e993919a2e30dd1b4fc702ac899f45c620d",
+    "/media/data2/xiawk/work2/src/fusion.py": "b503ef6c7831f8ded1e064973abcba4228c266aa37e61ae699a6765f72304121",
+    "/media/data2/xiawk/work2/src/实验配置.json": "1aa53a65a38fc9905c4ceda301f4b4bf4b7a9c3af42cd6e5ad78c6590d23e98f"
+  },
+  "inputs": {
+    "磷酸铁": {
+      "material": "磷酸铁",
+      "reference": "/media/data2/xiawk/work2/data/reference/磷酸铁",
+      "news": "/media/data2/xiawk/work2/data/raw/磷酸铁/news.jsonl",
+      "factor_results": "/media/data2/xiawk/work2/data/raw/磷酸铁/factors.json",
+      "source_hashes": {
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/dataset.npz": "640f8af335ac01466cd417a2dc495564227d06c369e53c998f2315507a7baf7a",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/data_report.json": "32fb7a2855df87f086adfc72a1909bf0b29aeab6c2e9dfc71679f2ce1626b75a",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/sample_index.json": "7ae83d7f13e6b24c7acf3edd33b61453bd561762b26a2ce4b2d3f79cb236dcdf",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/cleaned_factors.json": "68dba551a0f02de2552cba7f90fdea5b198bb573f74b1fd23b89b42942a7784b",
+        "/media/data2/xiawk/work2/data/raw/磷酸铁/磷酸铁（主要）.xlsx": "cd0b7b0322ed43353686d0d67b0aa78e9792dfd2c6c11a68bf8113dc33dc0616",
+        "/media/data2/xiawk/work2/data/raw/磷酸铁/news.jsonl": "7b89ae13fbb0a3afb2ddb20be1c9fb5fdf4bb01ea25fdbe14f8cd7702b1ec8b6",
+        "/media/data2/xiawk/work2/data/raw/磷酸铁/factors.json": "a1be50f6940dc0d9afffd30aff1669006ba5941c1d60bbdabe4396814fe8293d",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/original_manifest.json": "3ca70d1337a78000fd014d8132a6e82402e1c7cce532444cdd7cfc0bfad82399"
+      },
+      "reference_hashes": {
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/dataset.npz": "640f8af335ac01466cd417a2dc495564227d06c369e53c998f2315507a7baf7a",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/data_report.json": "32fb7a2855df87f086adfc72a1909bf0b29aeab6c2e9dfc71679f2ce1626b75a",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/sample_index.json": "7ae83d7f13e6b24c7acf3edd33b61453bd561762b26a2ce4b2d3f79cb236dcdf",
+        "/media/data2/xiawk/work2/data/reference/磷酸铁/data/cleaned_factors.json": "68dba551a0f02de2552cba7f90fdea5b198bb573f74b1fd23b89b42942a7784b"
+      }
+    },
+    "六氟磷酸锂": {
+      "material": "六氟磷酸锂",
+      "reference": "/media/data2/xiawk/work2/data/reference/六氟磷酸锂",
+      "news": "/media/data2/xiawk/work2/data/raw/六氟磷酸锂/news.jsonl",
+      "factor_results": "/media/data2/xiawk/work2/data/raw/六氟磷酸锂/factors.json",
+      "source_hashes": {
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/dataset.npz": "d56a300e44ec1b929e9cda2f35f73d895e93d1acfbdd1675de3e4e5b02d2845e",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/data_report.json": "3377445f4514a849dc10fe2c2e7afb7d08947fb41ee84927b2dd8755d3e11f18",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/sample_index.json": "d61d81a69ad7ea358303cc680697520c4b2e1d103b9200ef18da1be553557c91",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/cleaned_factors.json": "29a06934639c0426d2d6e3ae7e8dcafe348b6bbb4226e8ed90dc387e211cd1fc",
+        "/media/data2/xiawk/work2/data/raw/六氟磷酸锂/六氟磷酸锂（国产）更新.xlsx": "20f1df995e3b4a5c1542ee6878ace2fc73becd841f8788a41a121567ef04dded",
+        "/media/data2/xiawk/work2/data/raw/六氟磷酸锂/news.jsonl": "a4a192fd67937989d021921ba3f72cdbc172335b23413bc276de05aff714aa2c",
+        "/media/data2/xiawk/work2/data/raw/六氟磷酸锂/factors.json": "dcf71c029a7debc1a459f2ec779884c2f28f755728b5754f47070307a03e4bd0",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/original_manifest.json": "32158382a633342bb8c0b9aa47f941a77a15079fa0ffa9bf9463e75d3c6ea9ff"
+      },
+      "reference_hashes": {
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/dataset.npz": "d56a300e44ec1b929e9cda2f35f73d895e93d1acfbdd1675de3e4e5b02d2845e",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/data_report.json": "3377445f4514a849dc10fe2c2e7afb7d08947fb41ee84927b2dd8755d3e11f18",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/sample_index.json": "d61d81a69ad7ea358303cc680697520c4b2e1d103b9200ef18da1be553557c91",
+        "/media/data2/xiawk/work2/data/reference/六氟磷酸锂/data/cleaned_factors.json": "29a06934639c0426d2d6e3ae7e8dcafe348b6bbb4226e8ed90dc387e211cd1fc"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.18",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.6",
+    "device": "cuda:0",
+    "cuda_runtime": "12.4",
+    "cuda_visible_devices": "4",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "target": "next_quotation_price_via_normalized_difference"
+}

@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "graph_gated",
+  "recipe_id": "late_tcn_textcnn",
+  "seed": 22,
+  "recipe": {
+    "id": "late_tcn_textcnn",
+    "order": "late",
+    "paired": true,
+    "pair_id": "tcn_textcnn",
+    "price": "tcn",
+    "news": "textcnn",
+    "factor": "textcnn",
+    "joint": null
+  },
+  "validation": {
+    "mae": 179.14995902433418,
+    "rmse": 280.61697001031473,
+    "mape_percent": 0.33983594162093816,
+    "wape_percent": 0.3377337125030857,
+    "direction_accuracy": 0.4605263157894737,
+    "flat_count": 35,
+    "flat_mae": 84.99395406619172,
+    "change_count": 41,
+    "change_mae": 259.5270364276265,
+    "up_count": 7,
+    "up_mae": 513.9018967654223,
+    "down_count": 34,
+    "down_mae": 207.15574165219797
+  },
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "parameters": 181100,
+  "train_seconds": 21.173977881669998,
+  "checkpoint_sha256": "0df6eddd2fc1e73f72360afde44e27f89264ed51c2d57c12bc02df970aff16e7",
+  "test_used_for_training": false
+}

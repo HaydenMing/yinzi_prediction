@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "parallel",
+  "recipe_id": "early_gru_bigru",
+  "seed": 33,
+  "recipe": {
+    "id": "early_gru_bigru",
+    "order": "early",
+    "paired": true,
+    "pair_id": "gru_bigru",
+    "price": "gru",
+    "news": null,
+    "factor": null,
+    "joint": "bigru"
+  },
+  "validation": {
+    "mae": 5.3464780303817445,
+    "rmse": 12.267412476505983,
+    "mape_percent": 0.050443449781322716,
+    "wape_percent": 0.05043788454140079,
+    "direction_accuracy": 0.1728395061728395,
+    "flat_count": 63,
+    "flat_mae": 1.182302317584987,
+    "change_count": 18,
+    "change_mae": 19.921093025170396,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 19.921093025170396
+  },
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "parameters": 124161,
+  "train_seconds": 226.03352757543325,
+  "checkpoint_sha256": "a2ab119ef73da0cd577a433c069af9abc3a269d0d361f448adb992d18d6a3ada",
+  "test_used_for_training": false
+}

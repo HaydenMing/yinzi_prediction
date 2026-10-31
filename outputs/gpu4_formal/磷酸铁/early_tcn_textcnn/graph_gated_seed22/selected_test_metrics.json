@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "graph_gated",
+  "recipe_id": "early_tcn_textcnn",
+  "seed": 22,
+  "parameters": 143596,
+  "test": {
+    "mae": 8.528601128716142,
+    "rmse": 21.84975804086587,
+    "mape_percent": 0.07896596184954237,
+    "wape_percent": 0.08022052035714008,
+    "direction_accuracy": 0.03614457831325301,
+    "flat_count": 61,
+    "flat_mae": 0.22749262631733755,
+    "change_count": 22,
+    "change_mae": 31.54531106718555,
+    "up_count": 22,
+    "up_mae": 31.54531106718555,
+    "down_count": 0,
+    "down_mae": null
+  },
+  "recipe": {
+    "id": "early_tcn_textcnn",
+    "order": "early",
+    "paired": true,
+    "pair_id": "tcn_textcnn",
+    "price": "tcn",
+    "news": null,
+    "factor": null,
+    "joint": "textcnn"
+  },
+  "selection_scopes": [
+    "paired_early"
+  ],
+  "checkpoint_sha256": "1b2734414692b05f1f8e4153dc27e178188022de024d8e82a49725b836d4995f",
+  "feature_sha256": "4b09556cd7b68a5be24b7b47c85926ad6bf43f47fedde7a95b36a1dd08cef959"
+}

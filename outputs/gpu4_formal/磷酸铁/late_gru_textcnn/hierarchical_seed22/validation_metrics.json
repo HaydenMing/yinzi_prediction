@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "hierarchical",
+  "recipe_id": "late_gru_textcnn",
+  "seed": 22,
+  "recipe": {
+    "id": "late_gru_textcnn",
+    "order": "late",
+    "paired": true,
+    "pair_id": "gru_textcnn",
+    "price": "gru",
+    "news": "textcnn",
+    "factor": "textcnn",
+    "joint": null
+  },
+  "validation": {
+    "mae": 5.11536119460998,
+    "rmse": 12.446540961256511,
+    "mape_percent": 0.04822712603084773,
+    "wape_percent": 0.04825756242804164,
+    "direction_accuracy": 0.12345679012345678,
+    "flat_count": 63,
+    "flat_mae": 0.6232511002123381,
+    "change_count": 18,
+    "change_mae": 20.837746525001723,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 20.837746525001723
+  },
+  "best_epoch": 18,
+  "epochs_run": 26,
+  "parameters": 218721,
+  "train_seconds": 267.84261696226895,
+  "checkpoint_sha256": "8b4dcc61472ec52e949ae1ae36f72a4f57c6aced39b1591669b7b0eb4589ff78",
+  "test_used_for_training": false
+}

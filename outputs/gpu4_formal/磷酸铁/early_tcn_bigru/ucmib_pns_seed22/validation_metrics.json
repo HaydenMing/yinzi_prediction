@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "ucmib_pns",
+  "recipe_id": "early_tcn_bigru",
+  "seed": 22,
+  "recipe": {
+    "id": "early_tcn_bigru",
+    "order": "early",
+    "paired": true,
+    "pair_id": "tcn_bigru",
+    "price": "tcn",
+    "news": null,
+    "factor": null,
+    "joint": "bigru"
+  },
+  "validation": {
+    "mae": 5.073689126749944,
+    "rmse": 12.496765928590598,
+    "mape_percent": 0.047862967950990466,
+    "wape_percent": 0.047864434291092044,
+    "direction_accuracy": 0.14814814814814814,
+    "flat_count": 63,
+    "flat_mae": 0.621321052316229,
+    "change_count": 18,
+    "change_mae": 20.656977387267943,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 20.656977387267943
+  },
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "parameters": 125896,
+  "train_seconds": 340.2314597144723,
+  "checkpoint_sha256": "767b089747e12520cd79b90ef29faa3aaa77bda8ba448a6086337b8f2532f924",
+  "test_used_for_training": false
+}

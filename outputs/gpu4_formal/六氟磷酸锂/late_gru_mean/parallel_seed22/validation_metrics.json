@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "parallel",
+  "recipe_id": "late_gru_mean",
+  "seed": 22,
+  "recipe": {
+    "id": "late_gru_mean",
+    "order": "late",
+    "paired": true,
+    "pair_id": "gru_mean",
+    "price": "gru",
+    "news": "mean",
+    "factor": "mean",
+    "joint": null
+  },
+  "validation": {
+    "mae": 164.3952868349344,
+    "rmse": 272.7167647397762,
+    "mape_percent": 0.3123116681428689,
+    "wape_percent": 0.3099181872167241,
+    "direction_accuracy": 0.5,
+    "flat_count": 35,
+    "flat_mae": 64.15648982726977,
+    "change_count": 41,
+    "change_mae": 249.96499159757496,
+    "up_count": 7,
+    "up_mae": 485.3167857969061,
+    "down_count": 34,
+    "down_mae": 201.51021043888912
+  },
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "parameters": 141569,
+  "train_seconds": 15.310291631147265,
+  "checkpoint_sha256": "2fe658f7231a71f11552e31c2ab57db4a248710e8c8c551e4c0db1899a337baf",
+  "test_used_for_training": false
+}

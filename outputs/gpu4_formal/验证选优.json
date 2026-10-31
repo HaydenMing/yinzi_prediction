@@ -1,0 +1,4261 @@
+{
+  "rule": "三种子平均验证MAE；测试不参与",
+  "groups": [
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.6227563419355,
+      "validation_mae_std": 1.2135966151011928,
+      "parameters": 93292
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.69115152436032,
+      "validation_mae_std": 3.9707041105555954,
+      "parameters": 89548
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.10499573596562,
+      "validation_mae_std": 3.7363094611792,
+      "parameters": 103980
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.24771723504787,
+      "validation_mae_std": 3.4802351294926144,
+      "parameters": 97516
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 188.9364415437274,
+      "validation_mae_std": 3.235257635700845,
+      "parameters": 93772
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 189.79558032022098,
+      "validation_mae_std": 4.213276591914088,
+      "parameters": 108204
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.2238193410534,
+      "validation_mae_std": 3.7520104101073786,
+      "parameters": 149836
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.23926412265234,
+      "validation_mae_std": 4.452830101748498,
+      "parameters": 160524
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.33404603279155,
+      "validation_mae_std": 4.386827728340752,
+      "parameters": 153580
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.26156403315545,
+      "validation_mae_std": 3.6678242516879065,
+      "parameters": 146092
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 181.20657678308547,
+      "validation_mae_std": 5.535108106721909,
+      "parameters": 174956
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.01990803808272,
+      "validation_mae_std": 3.329729836762236,
+      "parameters": 149836
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 177.4868477875814,
+      "validation_mae_std": 0.7279840676065997,
+      "parameters": 160524
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 179.18981331827203,
+      "validation_mae_std": 3.9492042736955453,
+      "parameters": 159724
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.25620263179516,
+      "validation_mae_std": 2.3190193746789087,
+      "parameters": 152236
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 180.74775943505668,
+      "validation_mae_std": 1.694473590686568,
+      "parameters": 181100
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.17707417266487,
+      "validation_mae_std": 1.814067651576593,
+      "parameters": 66273
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.02721815480882,
+      "validation_mae_std": 2.9816882426844744,
+      "parameters": 62529
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.03820112021515,
+      "validation_mae_std": 1.9650946058394072,
+      "parameters": 76961
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.07694725161605,
+      "validation_mae_std": 5.382159022470223,
+      "parameters": 70497
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.21952896113262,
+      "validation_mae_std": 3.3211572106611627,
+      "parameters": 66753
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 181.00361981611798,
+      "validation_mae_std": 3.5549163434762954,
+      "parameters": 81185
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.17041303087785,
+      "validation_mae_std": 0.4458389987156232,
+      "parameters": 122817
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.06678728218557,
+      "validation_mae_std": 0.39049154411570375,
+      "parameters": 133505
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.09212435914105,
+      "validation_mae_std": 0.3662282573962615,
+      "parameters": 126561
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.19034875755824,
+      "validation_mae_std": 0.5080746767926609,
+      "parameters": 119073
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 181.7634748753512,
+      "validation_mae_std": 0.300326312044291,
+      "parameters": 147937
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 182.23539239215987,
+      "validation_mae_std": 0.5296864032747224,
+      "parameters": 122817
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 181.78902746064114,
+      "validation_mae_std": 0.4269856687847881,
+      "parameters": 133505
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.16561472229515,
+      "validation_mae_std": 3.820389882394115,
+      "parameters": 132705
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.14546290900947,
+      "validation_mae_std": 3.792326897992002,
+      "parameters": 125217
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.57775294841187,
+      "validation_mae_std": 4.131920756895827,
+      "parameters": 154081
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 174.70496424189346,
+      "validation_mae_std": 0.5618820164181112,
+      "parameters": 88257
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.67415515667733,
+      "validation_mae_std": 1.2671396748031953,
+      "parameters": 84513
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 174.2416687923578,
+      "validation_mae_std": 4.703622420706968,
+      "parameters": 98945
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 179.910134966129,
+      "validation_mae_std": 2.03197121400706,
+      "parameters": 92481
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.24742190042753,
+      "validation_mae_std": 1.5131458781772078,
+      "parameters": 88737
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 192.81972316985858,
+      "validation_mae_std": 6.128531739175993,
+      "parameters": 103169
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.85701199151765,
+      "validation_mae_std": 0.6119919384386159,
+      "parameters": 144801
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.7040859377383,
+      "validation_mae_std": 0.3145184442910351,
+      "parameters": 155489
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.44053694326897,
+      "validation_mae_std": 0.404364870199196,
+      "parameters": 148545
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.43486722069727,
+      "validation_mae_std": 0.41495723960329195,
+      "parameters": 141057
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.96333571264609,
+      "validation_mae_std": 0.5421627427288316,
+      "parameters": 169921
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.82979439185294,
+      "validation_mae_std": 0.6273265389858809,
+      "parameters": 144801
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.63297274786575,
+      "validation_mae_std": 0.382878824882782,
+      "parameters": 155489
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.32250907435363,
+      "validation_mae_std": 3.3426487651533185,
+      "parameters": 154689
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.12795769823296,
+      "validation_mae_std": 3.0215119936724153,
+      "parameters": 147201
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.38410696978463,
+      "validation_mae_std": 3.3460338438939354,
+      "parameters": 176065
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.7379005618925,
+      "validation_mae_std": 2.445063408900468,
+      "parameters": 88769
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.50059617940505,
+      "validation_mae_std": 3.1304149964033514,
+      "parameters": 85025
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.79604240281228,
+      "validation_mae_std": 3.40709344353573,
+      "parameters": 99457
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 177.56801260501058,
+      "validation_mae_std": 4.294944502902031,
+      "parameters": 92993
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 178.55664697967657,
+      "validation_mae_std": 1.377973318504992,
+      "parameters": 89249
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 189.99665610351485,
+      "validation_mae_std": 4.706090428408844,
+      "parameters": 103681
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.2997950076017,
+      "validation_mae_std": 4.48565928738233,
+      "parameters": 145313
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.3998587712524,
+      "validation_mae_std": 4.511987478020825,
+      "parameters": 156001
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.60493305007222,
+      "validation_mae_std": 5.0058212498781245,
+      "parameters": 149057
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.50288217179235,
+      "validation_mae_std": 4.565863748036116,
+      "parameters": 141569
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.00532540344602,
+      "validation_mae_std": 3.854072418706011,
+      "parameters": 170433
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.50947101916162,
+      "validation_mae_std": 4.3250501878981895,
+      "parameters": 145313
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 169.3519859245287,
+      "validation_mae_std": 4.287459776688246,
+      "parameters": 156001
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 174.8597746575413,
+      "validation_mae_std": 1.1770212837432128,
+      "parameters": 155201
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 174.97570081047658,
+      "validation_mae_std": 1.4902022702442637,
+      "parameters": 147713
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.08327169519282,
+      "validation_mae_std": 1.0861505571321408,
+      "parameters": 176577
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 174.7289262865903,
+      "validation_mae_std": 3.2053762621929685,
+      "parameters": 86280
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.05568936484403,
+      "validation_mae_std": 4.553840201418315,
+      "parameters": 82536
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.06673230041906,
+      "validation_mae_std": 0.7106146027669492,
+      "parameters": 96968
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.48712369181268,
+      "validation_mae_std": 3.175134011980434,
+      "parameters": 90504
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 177.43289917195213,
+      "validation_mae_std": 4.432667251642322,
+      "parameters": 86760
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 181.26022703141666,
+      "validation_mae_std": 2.1563967074068326,
+      "parameters": 101192
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 168.1654889308861,
+      "validation_mae_std": 4.546116024021673,
+      "parameters": 142824
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 168.6658551826441,
+      "validation_mae_std": 4.853911433400879,
+      "parameters": 153512
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 167.86917157835646,
+      "validation_mae_std": 3.7531752577948385,
+      "parameters": 146568
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 168.36148274652228,
+      "validation_mae_std": 4.40284468023126,
+      "parameters": 139080
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 169.845133475874,
+      "validation_mae_std": 4.086122653837802,
+      "parameters": 167944
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 168.27742076051106,
+      "validation_mae_std": 4.55277567209455,
+      "parameters": 142824
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 168.54375227623242,
+      "validation_mae_std": 4.564829862362898,
+      "parameters": 153512
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.86906277226066,
+      "validation_mae_std": 5.935462314534514,
+      "parameters": 152712
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.5440187234301,
+      "validation_mae_std": 5.6517893548219735,
+      "parameters": 145224
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.44620913800114,
+      "validation_mae_std": 5.784490860190694,
+      "parameters": 174088
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.51118009012927,
+      "validation_mae_std": 0.3709979852939572,
+      "parameters": 128684
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.922318691506374,
+      "validation_mae_std": 0.11553344951701512,
+      "parameters": 124940
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.971846425548658,
+      "validation_mae_std": 0.017852194596855962,
+      "parameters": 139372
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.30880584750691,
+      "validation_mae_std": 0.31012260312090517,
+      "parameters": 132908
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.030079423850456,
+      "validation_mae_std": 0.13065479078245415,
+      "parameters": 129164
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.862868050836171,
+      "validation_mae_std": 0.13704666925701314,
+      "parameters": 143596
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.627414176665188,
+      "validation_mae_std": 0.502728866811098,
+      "parameters": 220620
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.9253178203378205,
+      "validation_mae_std": 0.12793572780390497,
+      "parameters": 231308
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.895018032164564,
+      "validation_mae_std": 0.314530356131884,
+      "parameters": 224364
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.767746878541563,
+      "validation_mae_std": 0.23785844635013795,
+      "parameters": 216876
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.856962887258265,
+      "validation_mae_std": 0.2853035069272009,
+      "parameters": 245740
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.748129344081289,
+      "validation_mae_std": 0.19219458679564685,
+      "parameters": 220620
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.999469912937205,
+      "validation_mae_std": 0.1207444293164133,
+      "parameters": 231308
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.758227317447941,
+      "validation_mae_std": 0.1341978654347269,
+      "parameters": 230508
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.656807065505832,
+      "validation_mae_std": 0.05449895363912807,
+      "parameters": 223020
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 6.034291138840497,
+      "validation_mae_std": 0.127315520660529,
+      "parameters": 251884
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.381935869322411,
+      "validation_mae_std": 0.1657568071990752,
+      "parameters": 101665
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.042747114475652,
+      "validation_mae_std": 0.09432865333747224,
+      "parameters": 97921
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.9100435657372055,
+      "validation_mae_std": 0.09765764273686842,
+      "parameters": 112353
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.058560162347182,
+      "validation_mae_std": 0.12713702894790838,
+      "parameters": 105889
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.852368588414888,
+      "validation_mae_std": 0.06760592688967482,
+      "parameters": 102145
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.950644213784044,
+      "validation_mae_std": 0.04516211691115196,
+      "parameters": 116577
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.509986285447083,
+      "validation_mae_std": 0.47167166768785274,
+      "parameters": 193601
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.450611451549185,
+      "validation_mae_std": 0.3839431300145967,
+      "parameters": 204289
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.157648232225211,
+      "validation_mae_std": 0.04115727491174167,
+      "parameters": 197345
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.3486599864601,
+      "validation_mae_std": 0.45405488119849635,
+      "parameters": 189857
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.159792329097198,
+      "validation_mae_std": 0.12279049314294105,
+      "parameters": 218721
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.082821553858497,
+      "validation_mae_std": 0.06013198880242983,
+      "parameters": 193601
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.286318631654516,
+      "validation_mae_std": 0.12717353380955293,
+      "parameters": 204289
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.833720260941374,
+      "validation_mae_std": 1.0082955901376853,
+      "parameters": 203489
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.343043244983339,
+      "validation_mae_std": 0.3365553640411499,
+      "parameters": 196001
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.192426688972108,
+      "validation_mae_std": 0.16859662458286667,
+      "parameters": 224865
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.298756462665184,
+      "validation_mae_std": 0.21863804461726283,
+      "parameters": 123649
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.88791005488071,
+      "validation_mae_std": 0.08477964315839794,
+      "parameters": 119905
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.883090781346105,
+      "validation_mae_std": 0.09223760726087916,
+      "parameters": 134337
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.105030672840456,
+      "validation_mae_std": 0.09661015477614722,
+      "parameters": 127873
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.908422506746084,
+      "validation_mae_std": 0.05029094183169403,
+      "parameters": 124129
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.381474474911972,
+      "validation_mae_std": 0.33361793209583884,
+      "parameters": 138561
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.828348730138283,
+      "validation_mae_std": 0.27014808894256326,
+      "parameters": 215585
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 6.166988566971746,
+      "validation_mae_std": 0.25990291345713723,
+      "parameters": 226273
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.839980117824051,
+      "validation_mae_std": 0.2859843148712533,
+      "parameters": 219329
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.790749316288306,
+      "validation_mae_std": 0.2569415860513065,
+      "parameters": 211841
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 6.1855823476545835,
+      "validation_mae_std": 0.21226828416731522,
+      "parameters": 240705
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.808032444963058,
+      "validation_mae_std": 0.26473111784475994,
+      "parameters": 215585
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 6.102282703648051,
+      "validation_mae_std": 0.12727299378450216,
+      "parameters": 226273
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.54266267591617,
+      "validation_mae_std": 0.08076763768508202,
+      "parameters": 225473
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.600405868374132,
+      "validation_mae_std": 0.21409417115698723,
+      "parameters": 217985
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.741607402148666,
+      "validation_mae_std": 0.11404719979803969,
+      "parameters": 246849
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.338061859986734,
+      "validation_mae_std": 0.10625215285651697,
+      "parameters": 124161
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.110561172925567,
+      "validation_mae_std": 0.008387419241587726,
+      "parameters": 120417
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.951306598734377,
+      "validation_mae_std": 0.12327814006718278,
+      "parameters": 134849
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.356782477991992,
+      "validation_mae_std": 0.14924219984200213,
+      "parameters": 128385
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.0283053082976386,
+      "validation_mae_std": 0.10797327121268671,
+      "parameters": 124641
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.817752923994673,
+      "validation_mae_std": 0.06329080450369416,
+      "parameters": 139073
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.630144370031853,
+      "validation_mae_std": 0.3011600465657625,
+      "parameters": 216097
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.674033066170568,
+      "validation_mae_std": 0.2558217995623329,
+      "parameters": 226785
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.875815025092095,
+      "validation_mae_std": 0.16085179111038575,
+      "parameters": 219841
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.835751661678299,
+      "validation_mae_std": 0.14570488640997967,
+      "parameters": 212353
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.511263924312538,
+      "validation_mae_std": 0.12956289964755216,
+      "parameters": 241217
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.961193851166651,
+      "validation_mae_std": 0.21060667514077505,
+      "parameters": 216097
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.692162884184991,
+      "validation_mae_std": 0.3220513695030692,
+      "parameters": 226785
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.682129649557241,
+      "validation_mae_std": 0.0716352901574541,
+      "parameters": 225985
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.693712312216348,
+      "validation_mae_std": 0.005995317255613947,
+      "parameters": 218497
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.878966771281316,
+      "validation_mae_std": 0.2015165064186183,
+      "parameters": 247361
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_bigru",
+      "recipe": {
+        "id": "early_gru_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.35704680860871,
+      "validation_mae_std": 0.10349195073117747,
+      "parameters": 121672
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.014607565182828,
+      "validation_mae_std": 0.1420516527244181,
+      "parameters": 117928
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.856561949409237,
+      "validation_mae_std": 0.05876011885432996,
+      "parameters": 132360
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_bigru",
+      "recipe": {
+        "id": "early_tcn_bigru",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "bigru"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.209447512718991,
+      "validation_mae_std": 0.12012565206611571,
+      "parameters": 125896
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.822394680851292,
+      "validation_mae_std": 0.09545912823485973,
+      "parameters": 122152
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.8802004582136265,
+      "validation_mae_std": 0.038614193733582096,
+      "parameters": 136584
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.816390238212734,
+      "validation_mae_std": 0.10118504510469074,
+      "parameters": 213608
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_factor_textcnn",
+      "recipe": {
+        "id": "late_factor_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.616044256801698,
+      "validation_mae_std": 0.17884725729569778,
+      "parameters": 224296
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.499210736459489,
+      "validation_mae_std": 0.3253831634856465,
+      "parameters": 217352
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.7676479657151605,
+      "validation_mae_std": 0.1312600513563464,
+      "parameters": 209864
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.522696249446255,
+      "validation_mae_std": 0.29197771796292393,
+      "parameters": 238728
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.809575262994655,
+      "validation_mae_std": 0.08985932456668161,
+      "parameters": 213608
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.6628002266353015,
+      "validation_mae_std": 0.08001645570415787,
+      "parameters": 224296
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.554400882203541,
+      "validation_mae_std": 0.21087659620498878,
+      "parameters": 223496
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.543317022985676,
+      "validation_mae_std": 0.22503340040590095,
+      "parameters": 216008
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.480478137416718,
+      "validation_mae_std": 0.1684411541269595,
+      "parameters": 244872
+    }
+  ],
+  "winners_by_scope": [
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.01990803808272,
+      "validation_mae_std": 3.329729836762236,
+      "parameters": 149836,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.10499573596562,
+      "validation_mae_std": 3.7363094611792,
+      "parameters": 103980,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.26156403315545,
+      "validation_mae_std": 3.6678242516879065,
+      "parameters": 146092,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.14546290900947,
+      "validation_mae_std": 3.792326897992002,
+      "parameters": 125217,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.02721815480882,
+      "validation_mae_std": 2.9816882426844744,
+      "parameters": 62529,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.14546290900947,
+      "validation_mae_std": 3.792326897992002,
+      "parameters": 125217,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.43486722069727,
+      "validation_mae_std": 0.41495723960329195,
+      "parameters": 141057,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.67415515667733,
+      "validation_mae_std": 1.2671396748031953,
+      "parameters": 84513,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.43486722069727,
+      "validation_mae_std": 0.41495723960329195,
+      "parameters": 141057,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 169.3519859245287,
+      "validation_mae_std": 4.287459776688246,
+      "parameters": 156001,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.79604240281228,
+      "validation_mae_std": 3.40709344353573,
+      "parameters": 99457,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.00532540344602,
+      "validation_mae_std": 3.854072418706011,
+      "parameters": 170433,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 167.86917157835646,
+      "validation_mae_std": 3.7531752577948385,
+      "parameters": 146568,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.06673230041906,
+      "validation_mae_std": 0.7106146027669492,
+      "parameters": 96968,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 167.86917157835646,
+      "validation_mae_std": 3.7531752577948385,
+      "parameters": 146568,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.627414176665188,
+      "validation_mae_std": 0.502728866811098,
+      "parameters": 220620,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.862868050836171,
+      "validation_mae_std": 0.13704666925701314,
+      "parameters": 143596,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.656807065505832,
+      "validation_mae_std": 0.05449895363912807,
+      "parameters": 223020,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.082821553858497,
+      "validation_mae_std": 0.06013198880242983,
+      "parameters": 193601,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.852368588414888,
+      "validation_mae_std": 0.06760592688967482,
+      "parameters": 102145,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.157648232225211,
+      "validation_mae_std": 0.04115727491174167,
+      "parameters": 197345,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.54266267591617,
+      "validation_mae_std": 0.08076763768508202,
+      "parameters": 225473,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.883090781346105,
+      "validation_mae_std": 0.09223760726087916,
+      "parameters": 134337,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.54266267591617,
+      "validation_mae_std": 0.08076763768508202,
+      "parameters": 225473,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.511263924312538,
+      "validation_mae_std": 0.12956289964755216,
+      "parameters": 241217,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.817752923994673,
+      "validation_mae_std": 0.06329080450369416,
+      "parameters": 139073,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.511263924312538,
+      "validation_mae_std": 0.12956289964755216,
+      "parameters": 241217,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.480478137416718,
+      "validation_mae_std": 0.1684411541269595,
+      "parameters": 244872,
+      "selection_scope": "native_late",
+      "candidates": 10
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.822394680851292,
+      "validation_mae_std": 0.09545912823485973,
+      "parameters": 122152,
+      "selection_scope": "paired_early",
+      "candidates": 6
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.480478137416718,
+      "validation_mae_std": 0.1684411541269595,
+      "parameters": 244872,
+      "selection_scope": "paired_late",
+      "candidates": 6
+    }
+  ],
+  "unique_selected": [
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.01990803808272,
+      "validation_mae_std": 3.329729836762236,
+      "parameters": 149836,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.10499573596562,
+      "validation_mae_std": 3.7363094611792,
+      "parameters": 103980,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "graph_gated",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 176.26156403315545,
+      "validation_mae_std": 3.6678242516879065,
+      "parameters": 146092,
+      "selection_scope": "paired_late",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.14546290900947,
+      "validation_mae_std": 3.792326897992002,
+      "parameters": 125217,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "hierarchical",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 175.02721815480882,
+      "validation_mae_std": 2.9816882426844744,
+      "parameters": 62529,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "late_gru_mean",
+      "recipe": {
+        "id": "late_gru_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 171.43486722069727,
+      "validation_mae_std": 0.41495723960329195,
+      "parameters": 141057,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "lcmf",
+      "recipe_id": "early_gru_mean",
+      "recipe": {
+        "id": "early_gru_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_mean",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 173.67415515667733,
+      "validation_mae_std": 1.2671396748031953,
+      "parameters": 84513,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_news_textcnn",
+      "recipe": {
+        "id": "late_news_textcnn",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 169.3519859245287,
+      "validation_mae_std": 4.287459776688246,
+      "parameters": 156001,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.79604240281228,
+      "validation_mae_std": 3.40709344353573,
+      "parameters": 99457,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 170.00532540344602,
+      "validation_mae_std": 3.854072418706011,
+      "parameters": 170433,
+      "selection_scope": "paired_late",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 167.86917157835646,
+      "validation_mae_std": 3.7531752577948385,
+      "parameters": 146568,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "六氟磷酸锂",
+      "model": "ucmib_pns",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 172.06673230041906,
+      "validation_mae_std": 0.7106146027669492,
+      "parameters": 96968,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_factor_bigru",
+      "recipe": {
+        "id": "late_factor_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "mean",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.627414176665188,
+      "validation_mae_std": 0.502728866811098,
+      "parameters": 220620,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.862868050836171,
+      "validation_mae_std": 0.13704666925701314,
+      "parameters": 143596,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "graph_gated",
+      "recipe_id": "late_tcn_mean",
+      "recipe": {
+        "id": "late_tcn_mean",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": "mean",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.656807065505832,
+      "validation_mae_std": 0.05449895363912807,
+      "parameters": 223020,
+      "selection_scope": "paired_late",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_news_bigru",
+      "recipe": {
+        "id": "late_news_bigru",
+        "order": "late",
+        "paired": false,
+        "pair_id": null,
+        "price": "gru",
+        "news": "bigru",
+        "factor": "mean",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.082821553858497,
+      "validation_mae_std": 0.06013198880242983,
+      "parameters": 193601,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.852368588414888,
+      "validation_mae_std": 0.06760592688967482,
+      "parameters": 102145,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "hierarchical",
+      "recipe_id": "late_gru_bigru",
+      "recipe": {
+        "id": "late_gru_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_bigru",
+        "price": "gru",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.157648232225211,
+      "validation_mae_std": 0.04115727491174167,
+      "parameters": 197345,
+      "selection_scope": "paired_late",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "late_tcn_bigru",
+      "recipe": {
+        "id": "late_tcn_bigru",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_bigru",
+        "price": "tcn",
+        "news": "bigru",
+        "factor": "bigru",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.54266267591617,
+      "validation_mae_std": 0.08076763768508202,
+      "parameters": 225473,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "lcmf",
+      "recipe_id": "early_gru_textcnn",
+      "recipe": {
+        "id": "early_gru_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.883090781346105,
+      "validation_mae_std": 0.09223760726087916,
+      "parameters": 134337,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "late_gru_textcnn",
+      "recipe": {
+        "id": "late_gru_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "gru_textcnn",
+        "price": "gru",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.511263924312538,
+      "validation_mae_std": 0.12956289964755216,
+      "parameters": 241217,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "parallel",
+      "recipe_id": "early_tcn_textcnn",
+      "recipe": {
+        "id": "early_tcn_textcnn",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "textcnn"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.817752923994673,
+      "validation_mae_std": 0.06329080450369416,
+      "parameters": 139073,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "late_tcn_textcnn",
+      "recipe": {
+        "id": "late_tcn_textcnn",
+        "order": "late",
+        "paired": true,
+        "pair_id": "tcn_textcnn",
+        "price": "tcn",
+        "news": "textcnn",
+        "factor": "textcnn",
+        "joint": null
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 5.480478137416718,
+      "validation_mae_std": 0.1684411541269595,
+      "parameters": 244872,
+      "selection_scope": "native_late",
+      "candidates": 10,
+      "selection_scopes": [
+        "native_late",
+        "paired_late"
+      ]
+    },
+    {
+      "material": "磷酸铁",
+      "model": "ucmib_pns",
+      "recipe_id": "early_tcn_mean",
+      "recipe": {
+        "id": "early_tcn_mean",
+        "order": "early",
+        "paired": true,
+        "pair_id": "tcn_mean",
+        "price": "tcn",
+        "news": null,
+        "factor": null,
+        "joint": "mean"
+      },
+      "seed_count": 3,
+      "validation_mae_mean": 4.822394680851292,
+      "validation_mae_std": 0.09545912823485973,
+      "parameters": 122152,
+      "selection_scope": "paired_early",
+      "candidates": 6,
+      "selection_scopes": [
+        "paired_early"
+      ]
+    }
+  ]
+}

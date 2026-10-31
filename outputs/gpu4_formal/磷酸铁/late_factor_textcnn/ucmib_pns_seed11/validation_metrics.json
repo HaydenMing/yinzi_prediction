@@ -1,0 +1,37 @@
+{
+  "material": "磷酸铁",
+  "model": "ucmib_pns",
+  "recipe_id": "late_factor_textcnn",
+  "seed": 11,
+  "recipe": {
+    "id": "late_factor_textcnn",
+    "order": "late",
+    "paired": false,
+    "pair_id": null,
+    "price": "gru",
+    "news": "mean",
+    "factor": "textcnn",
+    "joint": null
+  },
+  "validation": {
+    "mae": 5.36436587790152,
+    "rmse": 12.31682767308502,
+    "mape_percent": 0.05061011324475126,
+    "wape_percent": 0.050606635854465135,
+    "direction_accuracy": 0.16049382716049382,
+    "flat_count": 63,
+    "flat_mae": 1.121634406229229,
+    "change_count": 18,
+    "change_mae": 20.213926028754535,
+    "up_count": 0,
+    "up_mae": null,
+    "down_count": 18,
+    "down_mae": 20.213926028754535
+  },
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "parameters": 224296,
+  "train_seconds": 144.21714347973466,
+  "checkpoint_sha256": "45a9304b075bc14eab418d9916988e88d362d3ff516645ae166c8e0b83300ccf",
+  "test_used_for_training": false
+}

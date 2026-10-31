@@ -1,0 +1,10 @@
+{
+  "completed": 480,
+  "planned": 480,
+  "last": {
+    "material": "六氟磷酸锂",
+    "model": "lcmf",
+    "recipe_id": "late_factor_bigru",
+    "seed": 33
+  }
+}

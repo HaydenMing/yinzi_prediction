@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "parallel",
+  "recipe_id": "late_news_textcnn",
+  "seed": 11,
+  "parameters": 156001,
+  "test": {
+    "mae": 901.7932014461994,
+    "rmse": 1562.3830622805917,
+    "mape_percent": 0.7556548344916922,
+    "wape_percent": 0.8292301763996914,
+    "direction_accuracy": 0.5194805194805194,
+    "flat_count": 30,
+    "flat_mae": 136.59580895748635,
+    "change_count": 47,
+    "change_mae": 1390.2170689921866,
+    "up_count": 40,
+    "up_mae": 1505.0833499331652,
+    "down_count": 7,
+    "down_mae": 733.8383207580222
+  },
+  "recipe": {
+    "id": "late_news_textcnn",
+    "order": "late",
+    "paired": false,
+    "pair_id": null,
+    "price": "gru",
+    "news": "textcnn",
+    "factor": "mean",
+    "joint": null
+  },
+  "selection_scopes": [
+    "native_late"
+  ],
+  "checkpoint_sha256": "84ecc4ce336ace2ab098d0c2676572496e0bd81dda33c6cd97c67e151e451b24",
+  "feature_sha256": "6a2c01417eae287fa8ff8b9b73156c2ae93895655d02f72141e7c334af495b5e"
+}

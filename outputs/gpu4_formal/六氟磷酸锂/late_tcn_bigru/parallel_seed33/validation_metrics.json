@@ -1,0 +1,37 @@
+{
+  "material": "六氟磷酸锂",
+  "model": "parallel",
+  "recipe_id": "late_tcn_bigru",
+  "seed": 33,
+  "recipe": {
+    "id": "late_tcn_bigru",
+    "order": "late",
+    "paired": true,
+    "pair_id": "tcn_bigru",
+    "price": "tcn",
+    "news": "bigru",
+    "factor": "bigru",
+    "joint": null
+  },
+  "validation": {
+    "mae": 176.49546913016965,
+    "rmse": 282.55308694859514,
+    "mape_percent": 0.33420362131120773,
+    "wape_percent": 0.33272946504670564,
+    "direction_accuracy": 0.42105263157894735,
+    "flat_count": 35,
+    "flat_mae": 68.41601398436053,
+    "change_count": 41,
+    "change_mae": 268.7584186448847,
+    "up_count": 7,
+    "up_mae": 438.2360066186874,
+    "down_count": 34,
+    "down_mae": 233.86597406204302
+  },
+  "best_epoch": 8,
+  "epochs_run": 16,
+  "parameters": 155201,
+  "train_seconds": 54.43470064178109,
+  "checkpoint_sha256": "e99cc7147c841b629452747b9bff0236e692bc30072aba127aeb8bc2e68b43de",
+  "test_used_for_training": false
+}
